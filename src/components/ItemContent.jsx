@@ -153,7 +153,7 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
               name: post.title,
               image: itemImage, //`https://via.placeholder.com/75x75`, //itemImage,
               description: ``,
-              price: post.price*100,
+              price: Math.round(post.price*100),
               shippable: true,
               quantity: 1,
               stock: itemQuantity,
